@@ -1,2 +1,3 @@
-# lqb-diary
-my diary、my life
+# lqb diary
+
+这里用来记录 lqb 的生活、工作、感悟、和一些乱七八糟~~~
