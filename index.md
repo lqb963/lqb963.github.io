@@ -13,5 +13,9 @@
 测试提交
 jekyll docsify
 
-
+https://www.cnblogs.com/mushanya/p/16827581.html
 process on  xmind 等流程图工具  试着画图
+
+
+求其上,得其中；求其中,得其下；求其下,必败。
+取法于上，仅得为中，取法于中，故为其下
