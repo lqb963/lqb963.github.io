@@ -8,14 +8,15 @@
 4. 图床
    - 存储图片的网络服务器
    - 可以利用阿里云 oss 搭建自己的图床
-5. 代码管理、规范 git等  git 提交pr 请求合并
-6. bug修复 流程
-测试提交
-jekyll docsify
+5. 代码管理、规范 git 等 git 提交 pr 请求合并
+6. bug 修复 流程测试提交 jekyll docsify
 
-https://www.cnblogs.com/mushanya/p/16827581.html
-process on  xmind 等流程图工具  试着画图
+https://www.cnblogs.com/mushanya/p/16827581.html process on xmind 等流程图工具 试着画图
 
+求其上,得其中；求其中,得其下；求其下,必败。取法于上，仅得为中，取法于中，故为其下
 
-求其上,得其中；求其中,得其下；求其下,必败。
-取法于上，仅得为中，取法于中，故为其下
+近期目标：
+
+1. git 梳理清楚
+2. 软件工程 sop
+3. vue3+ts
