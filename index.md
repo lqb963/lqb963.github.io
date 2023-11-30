@@ -20,3 +20,23 @@ https://www.cnblogs.com/mushanya/p/16827581.html process on xmind 等流程图�
 1. git 梳理清楚
 2. 软件工程 sop
 3. vue3+ts
+
+## 1127
+
+mysql 安装卸载
+
+1. https://blog.csdn.net/m0_52559040/article/details/121843945
+2. https://blog.csdn.net/shaxu123/article/details/96703935
+
+## 1128
+
+1. [Ubuntu 中显示 yum 命令找不到](https://blog.csdn.net/sinat_40482939/article/details/107725446)
+2. [解决 Ubuntu 报错 E: Unable to locate package yum](https://blog.csdn.net/SH_ke/article/details/118496704)
+3. [ubuntu 配置国内镜像源](https://zhuanlan.zhihu.com/p/491169183)
+
+4. 哥们人麻了 把 ubuntu 换掉了 用了阿里默认的
+5. https://developer.aliyun.com/article/877907?spm=a2c6h.14164896.0.0.1aab7f75kJkg5M
+
+## 1130
+
+
