@@ -1,19 +1,5 @@
-
-class Student {
-  fullName: string;
-  constructor(public firstName, public lastName) {
-    this.fullName = firstName + lastName
+class Site {
+  name(): void {
+    console.log('Runoob')
   }
 }
-
-interface Person {
-  firstName: string,
-  lastName: string
-}
-
-function greeter(person: Person) {
-  return "hello" + person.firstName
-}
-let user = new Student('jane', 'july')
-
-greeter(user)
