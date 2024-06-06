@@ -5,4 +5,5 @@
 * - [职业](work/README.md)
 * - [生活](life/README.md)
 * - [JavaScript权威指南](JavaScript权威指南/README.md)
+* - [计算机科学导论](计算机科学导论/README.md)
 * - [git](git/README.md)
