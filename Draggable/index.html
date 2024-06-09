@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Document</title>
+    <style>
+      #draggable-box {
+        position: fixed;
+        width: 100px;
+        height: 100px;
+        background-color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      id="draggable-box"
+      draggable="true"
+    ></div>
+    <script>
+      const drag = document.querySelector('#draggable-box');
+
+      drag.addEventListener('dragend', function (event) {
+        console.log('event', event);
+        const { pageX, pageY } = event;
+        drag.style.top = `${pageY}px`;
+        drag.style.left = `${pageX}px`;
+      });
+    </script>
+  </body>
+</html>

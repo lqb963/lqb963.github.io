@@ -1,2 +1,2 @@
 # lqb-diary
-my diary、my life
+零钱包的日常生活
