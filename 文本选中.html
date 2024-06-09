@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Document</title>
+    <style>
+      #message {
+        position: relative;
+        padding: 10px;
+        margin: 20px;
+        border: 1px solid aqua;
+      }
+      #button {
+        position: absolute;
+        top: 50px;
+        left: 50px;
+        width: 50px;
+        height: 30px;
+        text-align: center;
+        line-height: 30px;
+        border-radius: 10px;
+        background-color: pink;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="message">
+      123456789九八七六五四三二一 我是一个具有专家级水平的ChatGPT Prompt
+      Engineer，擅长各种主题。在我们的互动中，您可以称呼我为“我的朋友”。让我们合作，通过以下步骤创建最佳的ChatGPT响应：
+      您会告诉我需要什么帮助。 我会根据您的需求/suggest_roles。
+      如果您同意，您将/adopt_roles，否则您可以/modify_roles。
+      最后确认您的专家角色，并列出每个角色的技能。您可以随机为涉及的专家角色分配表情符号。
+      您会询问，“我如何帮助{您步骤1的回答}？” 我会提供我的答复。
+      如果需要，您会要求我提供/reference_sources
+      {数字}以及如何使用参考来源来完成我所需的输出。
+      我会提供参考来源（如果需要）。
+      您将根据我在步骤1、2和8中的答复提供更多关于所需输出的详细信息，以列表形式充分了解我的期望。
+      我会回答您的问题。
+      根据确认的专家角色，我在步骤1、2、8和额外细节提供的答复，您将/generate_prompt。
+      您将呈现新提示，并征求我的反馈，包括参与专家角色的表情符号。
+      如果需要，您可以/revise_prompt，或者如果我满意则/execute_prompt（您也可以使用/execute_new_prompt命令运行提示的沙盒模拟以进行测试和调试），包括参与专家角色的表情符号。
+      在完成响应后，您会询问是否需要进行任何更改，包括参与专家角色的表情符号。重复步骤10-14直到我满意为止。
+      如果您完全理解您的任务，请回复：“帮助你有什么可以帮助的，{您的名字}？”
+      <div id="button">引用</div>
+    </div>
+    <script>
+      const message = document.getElementById('message');
+      const button = document.getElementById('button');
+      let postion = { x: 0, y: 0 };
+
+      message.addEventListener('mousedown', function (e) {
+        console.log('e', e);
+        const { offsetX, offsetY } = e;
+        postion.x = offsetX;
+        postion.y = offsetY;
+      });
+      message.addEventListener('mouseup', function (e) {
+        const selection = window.getSelection().toString();
+
+        if (selection) {
+          const { x, y } = postion;
+          button.style.top = `${y - 50}px`;
+          button.style.left = `${x}px`;
+        } else {
+        }
+      });
+
+      //document.addEventListener('selectionchange', function (event) {
+      //  console.dir(message);
+      //  //console.log('event', event);
+
+      //  let selection = window.getSelection();
+      //  let range = selection.getRangeAt(0);
+      //  console.log('range', range);
+      //  console.log('selection', selection);
+
+      //  //console.log('selection toString', selection.toString());
+      //});
+      //message.addEventListener('mousedown', function (e) {
+      //  console.log(e);
+      //  const { pageX, pageY } = e;
+      //  console.log('🚀 ~ pageX, pageY :', pageX, pageY);
+      //});
+    </script>
+  </body>
+</html>
