@@ -41,3 +41,6 @@ mysql 安装卸载
 
 ## 240609
 [超全面的权限系统设计方案！（万能通用）](https://zhuanlan.zhihu.com/p/411140534)
+## 240527
+
+1.Nacos https://nacos.io/zh-cn/docs/what-is-nacos.html
