@@ -40,7 +40,48 @@ mysql 安装卸载
 ## 1130
 
 ## 240609
+
 [超全面的权限系统设计方案！（万能通用）](https://zhuanlan.zhihu.com/p/411140534)
+
 ## 240527
 
 1.Nacos https://nacos.io/zh-cn/docs/what-is-nacos.html
+
+## 240624
+
+瑟瑟？=> 纯爱？ => 想要什么样的爱？=>你我皆是牛马，智者不如爱河  
+交友/交往/交际 => 各取所需 => 恋爱？朋友？ => nono 不要上头如何把女生钓成翘嘴 => 提升男性吸引力
+
+## 240703
+
+1. 努力成为 soft engineer
+2. 回家学计算机
+3. 在公司学前端
+
+# Lottie:让 Web 动画更简单（一）
+
+https://juejin.cn/post/7200388232105754680
+
+# 优惠券
+
+https://www.woshipm.com/pd/3561493.html 核心点 刺激用户付费
+
+1. 获取
+2. 使用
+
+3. 折扣券
+
+# 用户
+
+1. 领取
+2. 查看
+3. 使用
+   - 选择商品
+   - 支付
+   - 订单
+
+# 240711
+
+https://github.com/xiangyuecn/Recorder
+
+浏览器市场占有量排行
