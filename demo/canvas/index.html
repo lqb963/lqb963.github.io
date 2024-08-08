@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <canvas
+      width="300"
+      height="300"
+      id="canvas"
+    ></canvas>
+    <script>
+      const canvas = document.getElementById('canvas');
+      const ctx = canvas.getContext('2d');
+
+      // 填充矩形
+      //ctx.fillStyle = 'rgba(0,0,200,0.5)';
+      //ctx.fillRect(30, 30, 55, 50);
+      //ctx.fillStyle = 'rgb(200,0,0)';
+      //ctx.fillRect(10, 10, 55, 50);
+      // 绘制路径(三角形)
+      //ctx.beginPath();
+      //ctx.moveTo(50, 50);
+      //ctx.lineTo(200, 50);
+      //ctx.lineTo(50, 200);
+      //ctx.lineTo(50, 50);
+      //ctx.closePath();
+      //ctx.fill()
+      //ctx.stroke();
+      // 绘制圆弧
+      //ctx.arc(50, 50, 50, 0, 90, false);
+      //ctx.stroke();
+      //ctx.beginPath();
+      //ctx.moveTo(50, 50);
+
+      //ctx.arcTo(200, 50, 200, 200, 100);
+
+      //ctx.lineTo(200, 200);
+      //ctx.stroke();
+
+      //赛贝尔曲线
+      //ctx.beginPath();
+      //ctx.moveTo(10, 200);
+      //let cp1x = 40,
+      //  cp1y = 100;
+      //let x = 200,
+      //  y = 200;
+      //ctx.quadraticCurveTo(cp1x, cp1y, x, y);
+      //ctx.stroke();
+
+      //ctx.beginPath();
+      //ctx.rect(10, 200, 10, 10);
+      //ctx.rect(cp1x, cp1y, 10, 10);
+      //ctx.rect(x, y, 10, 10);
+      //ctx.fill();
+
+      for (let i = 0; i < 6; i++) {
+        for (let j = 0; j < 6; j++) {
+          ctx.fillStyle = `rgb(${Math.floor(255 - 42.5 * i)},${Math.floor(
+            255 - 42.5 * j,
+          )},0)`;
+          ctx.fillRect(j * 50, i * 50, 50, 50);
+        }
+      }
+      //for (var i = 0; i < 6; i++) {
+      //  for (var j = 0; j < 6; j++) {
+      //    ctx.fillStyle =
+      //      'rgb(' +
+      //      Math.floor(255 - 42.5 * i) +
+      //      ',' +
+      //      Math.floor(255 - 42.5 * j) +
+      //      ',0)';
+      //    ctx.fillRect(j * 50, i * 50, 50, 50);
+      //  }
+      //}
+    </script>
+  </body>
+</html>

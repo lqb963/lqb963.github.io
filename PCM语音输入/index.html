@@ -10,9 +10,13 @@
   </head>
   <body>
     <script>
-      document.addEventListener('dragover', function (e) {
-        console.log(e);
-      });
+      window.onload = () => {
+        navigator.mediaDevices
+          .getUserMedia({ audio: true, video: false })
+          .then((res) => {
+            console.log('res', res);
+          });
+      };
     </script>
   </body>
 </html>

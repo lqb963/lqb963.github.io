@@ -85,3 +85,8 @@ https://www.woshipm.com/pd/3561493.html 核心点 刺激用户付费
 https://github.com/xiangyuecn/Recorder
 
 浏览器市场占有量排行
+
+# 240726
+
+[如何看待现在的前端？](https://www.zhihu.com/question/634451206/answer/3459566821)  
+[程序员差别](https://www.zhihu.com/question/593624388/answer/3309997476)
