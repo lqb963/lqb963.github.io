@@ -90,3 +90,10 @@ https://github.com/xiangyuecn/Recorder
 
 [如何看待现在的前端？](https://www.zhihu.com/question/634451206/answer/3459566821)  
 [程序员差别](https://www.zhihu.com/question/593624388/answer/3309997476)
+
+# 0812
+
+1. css - animation
+2. hsl
+3. gsap
+4. web components
