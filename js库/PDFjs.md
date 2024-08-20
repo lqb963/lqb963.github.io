@@ -1,5 +1,9 @@
 # [PDFjs](https://github.com/mozilla/pdf.js)
 
+## 参考链接
+
+[详细|vue 中使用 PDF.js 预览文件实践](https://juejin.cn/post/7090061215057051679)
+
 ## 简介
 
 PDFjs 是前端实现 PDF 预览的终极解决方案，性能、兼容性优
