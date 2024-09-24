@@ -134,3 +134,26 @@ var array = '\\begin{array}{cc} a & b \\\\ c & d \\end{array}';
 ### Katex 和 Mathjax 有什么区别
 
 两个不同的 js 数学公式渲染库
+
+### Katex 、 Mathjax 与 LaTex 有什么关系
+
+```
+MathJax、KaTeX 和 LaTeX 都是用于排版数学公式的工具，但它们有不同的用途和特点：
+
+LaTeX：
+
+是一种基于TeX的排版系统，广泛用于学术论文和书籍的编写。
+强大且灵活，支持复杂的数学公式和图表。
+需要编译器（如pdflatex）将源文件转换为PDF等格式。
+MathJax：
+
+是一个基于JavaScript的库，用于在网页上渲染LaTeX、MathML和AsciiMath格式的数学公式。
+适合需要在浏览器中动态显示数学公式的场合。
+支持大部分LaTeX语法，兼容性好，但渲染速度相对较慢。
+KaTeX：
+
+也是一个JavaScript库，用于在网页上渲染LaTeX格式的数学公式。
+以速度快和性能高著称，适合需要快速渲染的场合。
+支持的LaTeX语法不如MathJax全面，但足以满足大多数需求。
+总结来说，LaTeX用于离线文档的排版，而MathJax和KaTeX用于在线数学公式的渲染，MathJax兼容性更好，KaTeX速度更快。
+```
