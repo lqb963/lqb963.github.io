@@ -161,16 +161,99 @@ width: calc(50% + (@var - 20px)); // 结果是 calc(50% + (25vh - 20px))
 
 ## 函数
 
-## 命名空间
+Less 内置了多种函数用于转换颜色、处理字符串、算术运算等。这些函数在(Less 函数手册)[https://less.bootcss.com/functions/]中有详细介绍。 ps：css 就不要写函数了吧哥 要不太顶了
+
+```less
+//函数的用法非常简单。下面这个例子将介绍如何利用 percentage 函数将 0.5 转换为 50%，将颜色饱和度增加 5%，以及颜色亮度降低 25% 并且色相值增加 8 等用法：
+@base: #f04615;
+@width: 0.5;
+
+.class {
+  width: percentage(@width); // returns `50%`
+  color: saturate(@base, 5%);
+  background-color: spin(lighten(@base, 25%), 8);
+}
+```
+
+## 命名空间和访问符
+
+有时，出于组织结构或仅仅是为了提供一些封装的目的，你希望对混合（mixins）进行分组。你可以用 Less 更直观地实现这一需求。假设你希望将一些混合（mixins）和变量置于 #bundle 之下，为了以后方便重用或分发：
+
+```less
+#bundle() {
+  .button {
+    display: block;
+    border: 1px solid black;
+    background-color: gray;
+    &:hover {
+      bacckground-color: white;
+    }
+  }
+  .tab {
+    ...;
+  }
+  .citation {
+    ...;
+  }
+}
+// 把希望把.button 类混合到 #header a 中
+
+#header a {
+  color: orange;
+  #bundle.button(); //还可以书写为 #bundle > .button 形式
+}
+```
 
 ## 映射
 
+从 less3.5 开始 你还可以将混合(mixins)和规则集(rulesets) 作为一组值得映射(map)使用
+
+```less
+#colors() {
+  primary: blue;
+  secondary: green;
+}
+.button {
+  //color: #colors.primary;
+  //border: 1px solid #colors.secondary;
+  color: #colors[primary];
+  border: 1px solid #colors[secondary];
+}
+```
+
 ## 作用域
+
+Less 中得作用域 与 CSS 中得作用域非常相似，首先在本地查找变量和混合(mixins),如果找不到 则从父级作用域继承
+
+```less
+@var: red;
+
+#page {
+  @var: white;
+  #header {
+    color: @var; // white
+  }
+}
+```
 
 ## 注释
 
-## 导入
+块注释和行注释都可以使用：
 
+```less
+/**
+ * 这是一个注释
+ */
+@var: red;
+// 这是一行注释
+@var: white;
 ```
 
+## 导入
+
+“导入”的工作方式和你预期的一样。你可以导入一个 .less 文件，此文件中的所有变量就可以全部使用了。如果导入的文件是 .less 扩展名，则可以将扩展名省略掉：
+
+```less
+@import 'library'; // library.less
+@import 'typo.css';
 ```
