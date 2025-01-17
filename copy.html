@@ -1,84 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
-    <title>Document</title>
-  </head>
-  <body>
-    <div id="copy-btn">复制</div>
-    <script>
-      const btn = document.querySelector('#copy-btn');
-      console.log('btn', btn);
-      btn.addEventListener('click', function () {
-        clipboardCopy('123123123123');
-      });
-
-      function makeError() {
-        return new DOMException(
-          'The request is not allowed',
-          'NotAllowedError',
-        );
-      }
-
-      async function copyClipboardApi(text) {
-        // Use the Async Clipboard API when available. Requires a secure browsing
-        // context (i.e. HTTPS)
-        if (!navigator.clipboard) {
-          throw makeError();
-        }
-        return navigator.clipboard.writeText(text);
-      }
-
-      async function copyExecCommand(text) {
-        // Put the text to copy into a <span>
-        const span = document.createElement('span');
-        span.textContent = text;
-
-        // Preserve consecutive spaces and newlines
-        span.style.whiteSpace = 'pre';
-        span.style.webkitUserSelect = 'auto';
-        span.style.userSelect = 'all';
-
-        // Add the <span> to the page
-        document.body.appendChild(span);
-
-        // Make a selection object representing the range of text selected by the user
-        const selection = window.getSelection();
-        const range = window.document.createRange();
-        selection.removeAllRanges();
-        range.selectNode(span);
-        selection.addRange(range);
-
-        // Copy text to the clipboard
-        let success = false;
-        try {
-          success = window.document.execCommand('copy');
-        } finally {
-          // Cleanup
-          selection.removeAllRanges();
-          window.document.body.removeChild(span);
-        }
-
-        if (!success) throw makeError();
-      }
-
-      async function clipboardCopy(text) {
-        console.log('text', text);
-        try {
-          await copyClipboardApi(text);
-        } catch (err) {
-          // ...Otherwise, use document.execCommand() fallback
-          try {
-            await copyExecCommand(text);
-          } catch (err2) {
-            throw err2 || err || makeError();
-          }
-        }
-      }
-    </script>
-  </body>
-</html>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组</title>
+    <g id="第三版" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="白-主页改版--文件解析-解析中" transform="translate(-908, -918)">
+            <g id="编组-4" transform="translate(576, 834)">
+                <g id="上传文件upload/组件/02_上传文件_大" transform="translate(20, 72)">
+                    <g id="编组-3" transform="translate(308, 8)">
+                        <g id="icon/line/plus" transform="translate(4, 4)">
+                            <path d="M1.33333333,0 L14.6666667,0 C15.4030463,0 16,0.596953667 16,1.33333333 L16,14.6666667 C16,15.4030463 15.4030463,16 14.6666667,16 L1.33333333,16 C0.596953667,16 0,15.4030463 0,14.6666667 L0,1.33333333 C0,0.596953667 0.596953667,0 1.33333333,0 Z" id="底色"></path>
+                            <path d="M3.00000874,3.66666667 L12.9999913,3.66666667 C13.3681859,3.66666667 13.6666667,3.96514741 13.6666667,4.33334207 C13.6666667,4.70153673 13.3681859,5.00001747 12.9999913,5.00001747 L3.00000874,5.00001747 C2.63181408,5.00001747 2.33333333,4.70153673 2.33333333,4.33334207 C2.33333333,3.96514741 2.63181408,3.66666667 3.00000874,3.66666667 Z M5.6666754,1.66666667 L10.3333246,1.66666667 C10.7015193,1.66666667 11,1.96514741 11,2.33334207 C11,2.70153673 10.7015193,3.00001747 10.3333246,3.00001747 L5.6666754,3.00001747 C5.29848074,3.00001747 5,2.70153673 5,2.33334207 C5,1.96514741 5.29848074,1.66666667 5.6666754,1.66666667 Z M5,6.66668414 L5,12.6666841 L5,12.6666841 C5,12.8376294 5.12868006,12.9785199 5.29445962,12.9977749 L5.33333333,13.0000175 L10.6666667,13.0000175 C10.8376119,13.0000175 10.9785024,12.8713374 10.9977574,12.7055578 L11,12.6666841 L11,6.66668414 C11,6.29849431 11.2984768,6.00001747 11.6666667,6.00001747 C12.0348565,6.00001747 12.3333333,6.29849431 12.3333333,6.66668414 L12.3333333,12.6666841 L12.3333333,12.6666841 C12.3333333,13.5629357 11.6258978,14.2939568 10.7389632,14.331811 L10.6666667,14.3333508 L5.33333333,14.3333508 C4.43708177,14.3333508 3.70606063,13.6259152 3.6682065,12.7389807 L3.66666667,12.6666841 L3.66666667,6.66668414 C3.66666667,6.29849431 3.9651435,6.00001747 4.33333333,6.00001747 C4.70152317,6.00001747 5,6.29849431 5,6.66668414 Z" id="形状结合" fill="#A8B4C8" fill-rule="nonzero"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
