@@ -97,3 +97,14 @@ https://github.com/xiangyuecn/Recorder
 2. hsl
 3. gsap
 4. web components
+1. 博流量 提升刚需顾客占比基数
+   - 短视频平台
+     - 抖音
+     - 快手
+     - 小红书
+     - 微博
+   - 电商平台
+   - 
+销售刺激购买欲望  
+定价 物美价廉 不要有太大的经济压力  
+定位目标人群
